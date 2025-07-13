@@ -37,7 +37,7 @@ GET {{baseUrl}}/rooms/{{roomId}}/questions
 
 # Create question
 # @name createQuestion
-POST {{baseUrl}}/rooms//questions
+POST {{baseUrl}}/rooms/4bcc6e92-5ded-4b9b-b17f-65db7be04d2a/questions
 Content-Type: application/json
 
 {
