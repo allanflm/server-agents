@@ -1,29 +1,26 @@
-#Variables
-@baseurl =  http://localhost:3333
+# Variables
+@baseUrl = http://localhost:3333
 
-# Health Check
+# Health check
 # @name healthCheck
-GET {{baseurl}}/health
+GET {{baseUrl}}/health
 
 ###
-
 
 # Get rooms
 # @name getRooms
-GET {{baseurl}}/rooms
-
+GET {{baseUrl}}/rooms
 
 ###
 
-# Create Room
+# Create room
 # @name createRoom
-POST {{baseurl}}/rooms
-Accept: application/json
+POST {{baseUrl}}/rooms
 Content-Type: application/json
 
 {
-    "name": "Sala de teste",
-    "description": "Essa é uma sala de teste "
+  "name": "Sala de teste",
+  "description": "Essa é uma sala de teste"
 }
 
 ###
@@ -32,18 +29,17 @@ Content-Type: application/json
 
 ###
 
-
-# Get Room questions
+# Get room questions
 # @name getRoomQuestions
-GET {{baseurl}}/rooms/{{roomId}}/questions
+GET {{baseUrl}}/rooms/{{roomId}}/questions
 
 ###
 
 # Create question
 # @name createQuestion
-POST {{baseurl}}/rooms/{{roomId}}/questions
+POST {{baseUrl}}/rooms//questions
 Content-Type: application/json
 
 {
-    "question": "Qual é o conceito de X dentro de Y?"
+  "question": "O que é Vue.js e a sua diferença em relação ao Angular?"
 }
